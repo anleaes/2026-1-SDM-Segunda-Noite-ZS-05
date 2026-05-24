@@ -1,12 +1,9 @@
 
 ### Diagrama de classe para um aplicativo de leilão
 
-- Validar lógica de leilão automatico
-- Validar relação comparativa entre Order --- Orderitem --- Product
-
 @startuml ModeloApp
 
-class Pessoa{
+class Pessoa {
  -nome: Char
  -sobrenome: Char
  -email: Email
@@ -14,16 +11,15 @@ class Pessoa{
  +toString()
 }
 
-class Usuario{
+class Usuario {
  -ativo: Boolean
  -pontuacao: Integer
  -cpf: Char
  -perfil: CharChoices
- -leiloes_automaticos: ManyToMany[Leilao]
  +toString()
 }
 
-class Endereco{
+class Endereco {
  -cep: Char
  -numero: Integer
  -complemento: Char
@@ -32,7 +28,7 @@ class Endereco{
  +toString()
 }
 
-class Categoria{
+class Categoria {
  -nome: Char
  -descricao: Text
  -codigo_setor: Integer
@@ -40,7 +36,7 @@ class Categoria{
  +toString()
 }
 
-class Produto{
+class Produto {
  -titulo: Char
  -detalhes: Text
  -condicao_novo: Boolean
@@ -50,32 +46,35 @@ class Produto{
  +toString()
 }
 
-class Leilao{
+class Leilao {
  -lance_inicial: Decimal
  -data_encerramento: DateTime
  -ativo: Boolean
+ -status: CharChoices
  -produto: OneToOne[Produto]
  +toString()
 }
 
-class Lance{
+class Lance {
  -valor: Decimal
  -data_lance: DateTime
  -valido: Boolean
+ -ip_origem: Char
  -leilao: ForeignKey[Leilao]
  -comprador: ForeignKey[Usuario]
  +toString()
 }
 
-class Pagamento{
+class Pagamento {
  -metodo: CharChoices
  -valor_total: Float
  -pago: Boolean
- -lance: OneToOne[Lance]
+ -data_pagamento: DateTime
+ -leilao: OneToOne[Leilao]
  +toString()
 }
 
-class Envio{
+class Envio {
  -transportadora: Char
  -codigo_rastreio: Char
  -data_postagem: Date
@@ -84,23 +83,15 @@ class Envio{
  +toString()
 }
 
-class Avaliacao{
+class Avaliacao {
  -nota: Integer
  -comentario: Text
  -data_avaliacao: Date
  -visivel: Boolean
  -avaliador: ForeignKey[Usuario]
  -avaliado: ForeignKey[Usuario]
- -lance: ForeignKey[Lance]
- +toString()
-}
-
-class LanceAutomatico{
- -limite_maximo: Decimal
- -ativo: Boolean
- -data_configuracao: Datetime
- -usuario: ForeignKey[Usuario]
  -leilao: ForeignKey[Leilao]
+ +toString()
 }
 
 Usuario -up-|> Pessoa: 1..1
@@ -113,8 +104,6 @@ Usuario *--> Lance : 0..n
 Leilao *--> Pagamento : 1..1
 Pagamento *--> Envio : 1..1
 Usuario *--> Avaliacao : 0..n
-Avaliacao *--> Lance : 1..1
-Usuario *--> LanceAutomatico : 0..n
-Lance *--> LanceAutomatico : 0..n
+Leilao *--> Avaliacao : 1..1
 
 @enduml
