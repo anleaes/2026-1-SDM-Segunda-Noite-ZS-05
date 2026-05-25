@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'categoria.apps.CategoriaConfig',
     'pessoa.apps.PessoaConfig',
     'usuario.apps.UsuarioConfig',
+    'endereco.apps.EnderecoConfig',
 ]
 
 MIDDLEWARE = [

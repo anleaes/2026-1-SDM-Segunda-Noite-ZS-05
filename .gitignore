@@ -7,3 +7,5 @@
 /apps/pessoa/migrations/*
 /apps/usuario/__pycache__/*
 /apps/usuario/migrations/*
+/apps/endereco/__pycache__/*
+/apps/endereco/migrations/*
