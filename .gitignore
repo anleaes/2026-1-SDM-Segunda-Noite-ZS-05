@@ -19,3 +19,5 @@
 /apps/envio/migrations/*
 /apps/lance/__pycache__/*
 /apps/lance/migrations/*
+/apps/avaliacao/__pycache__/*
+/apps/avaliacao/migrations/*
