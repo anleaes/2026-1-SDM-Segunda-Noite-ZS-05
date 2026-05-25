@@ -32,4 +32,3 @@ urlpatterns = [
     path('enderecos/', include('endereco.urls', namespace='enderecos')),
 ]
 
-
