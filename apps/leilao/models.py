@@ -20,3 +20,5 @@ class Leilao(models.Model):
 
     def __str__(self):
         return f'Leilão: {self.produto.nome} ({self.status})'
+    
+    
