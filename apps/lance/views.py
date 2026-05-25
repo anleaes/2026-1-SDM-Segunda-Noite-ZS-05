@@ -6,3 +6,5 @@ from .serializer import LanceSerializer
 class LanceViewSet(viewsets.ModelViewSet):
     queryset = Lance.objects.all()
     serializer_class = LanceSerializer
+
+    
