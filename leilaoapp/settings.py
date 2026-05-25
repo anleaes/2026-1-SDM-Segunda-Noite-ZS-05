@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'categoria.apps.CategoriaConfig',
     'pessoa.apps.PessoaConfig',
+    'usuario.apps.UsuarioConfig',
 ]
 
 MIDDLEWARE = [

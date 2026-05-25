@@ -5,3 +5,5 @@
 .env
 /apps/pessoa/__pycache__/*
 /apps/pessoa/migrations/*
+/apps/usuario/__pycache__/*
+/apps/usuario/migrations/*
