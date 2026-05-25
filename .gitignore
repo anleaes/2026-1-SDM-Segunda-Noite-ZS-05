@@ -9,3 +9,5 @@
 /apps/usuario/migrations/*
 /apps/endereco/__pycache__/*
 /apps/endereco/migrations/*
+/apps/produto/__pycache__/*
+/apps/produto/migrations/*
