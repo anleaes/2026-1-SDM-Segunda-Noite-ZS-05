@@ -30,4 +30,3 @@ urlpatterns = [
     path('lances/', include('lance.urls', namespace='lances')),
      path('avaliacoes/', include('avaliacao.urls', namespace='avaliacoes')),
 ]
-
