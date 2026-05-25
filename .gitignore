@@ -17,3 +17,5 @@
 /apps/pagamento/migrations/*
 /apps/envio/__pycache__/*
 /apps/envio/migrations/*
+/apps/lance/__pycache__/*
+/apps/lance/migrations/*
