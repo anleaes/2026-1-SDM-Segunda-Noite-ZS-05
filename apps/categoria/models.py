@@ -14,4 +14,4 @@ class Categoria(models.Model):
     
     
 
-    
+##ajustes
