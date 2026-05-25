@@ -6,3 +6,4 @@ from .serializer import EnvioSerializer
 class EnvioViewSet(viewsets.ModelViewSet):
     queryset = Envio.objects.all()
     serializer_class = EnvioSerializer
+    
