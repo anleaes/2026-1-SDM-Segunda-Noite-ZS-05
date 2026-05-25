@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'endereco.apps.EnderecoConfig',
     'produto.apps.ProdutoConfig',
     'leilao.apps.LeilaoConfig',
+    'pagamento.apps.PagamentoConfig',
 ]
 
 MIDDLEWARE = [

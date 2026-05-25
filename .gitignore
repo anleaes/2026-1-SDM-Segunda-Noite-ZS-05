@@ -13,3 +13,5 @@
 /apps/produto/migrations/*
 /apps/leilao/__pycache__/*
 /apps/leilao/migrations/*
+/apps/pagamento/__pycache__/*
+/apps/pagamento/migrations/*
