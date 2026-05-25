@@ -5,3 +5,5 @@ class PagamentoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pagamento
         fields = '__all__'
+
+        
