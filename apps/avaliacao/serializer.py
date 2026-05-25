@@ -5,3 +5,4 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Avaliacao
         fields = '__all__'
+        
