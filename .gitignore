@@ -1,0 +1,5 @@
+/leilaoapp/__pycache__/*
+/apps/categories/__pycache__/*
+/apps/categories/migrations/*
+/.vscode
+
