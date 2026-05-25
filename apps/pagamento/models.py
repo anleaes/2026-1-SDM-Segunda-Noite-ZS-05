@@ -26,3 +26,5 @@ class Pagamento(models.Model):
 
     def __str__(self):
         return f'Pagamento R${self.valor} - Leilão: {self.leilao.id} ({self.status})'
+    
+    
