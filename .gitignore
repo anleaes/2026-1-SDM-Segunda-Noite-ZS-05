@@ -3,3 +3,5 @@
 /apps/categoria/migrations/*
 /.vscode
 .env
+/apps/pessoa/__pycache__/*
+/apps/pessoa/migrations/*
