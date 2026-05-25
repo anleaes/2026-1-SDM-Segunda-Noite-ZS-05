@@ -28,3 +28,4 @@ urlpatterns = [
     path('pagamentos/', include('pagamento.urls', namespace='pagamentos')),
     path('envios/', include('envio.urls', namespace='envios'))
 ]
+
