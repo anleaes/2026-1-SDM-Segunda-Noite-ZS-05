@@ -13,3 +13,5 @@ class Endereco(models.Model):
 
     def __str__(self):
         return f'{self.cep} - {self.numero} (Usuario: {self.usuario.pessoa.nome})'
+    
+    
