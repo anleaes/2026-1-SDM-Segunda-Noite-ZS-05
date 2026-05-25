@@ -6,3 +6,5 @@ from .serializer import AvaliacaoSerializer
 class AvaliacaoViewSet(viewsets.ModelViewSet):
     queryset = Avaliacao.objects.all()
     serializer_class = AvaliacaoSerializer 
+
+    
