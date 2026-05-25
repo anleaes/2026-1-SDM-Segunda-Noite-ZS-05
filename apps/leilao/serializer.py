@@ -5,3 +5,5 @@ class LeilaoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Leilao
         fields = '__all__'
+
+        
