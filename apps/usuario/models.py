@@ -19,3 +19,5 @@ class Usuario(models.Model):
 
     def __str__(self):
         return f'Usuario: {self.pessoa.nome} - {self.perfil}'
+    
+    
