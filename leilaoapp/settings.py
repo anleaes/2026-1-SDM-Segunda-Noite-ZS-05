@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'usuario.apps.UsuarioConfig',
     'endereco.apps.EnderecoConfig',
     'produto.apps.ProdutoConfig',
+    'leilao.apps.LeilaoConfig',
 ]
 
 MIDDLEWARE = [

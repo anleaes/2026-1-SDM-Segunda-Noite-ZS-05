@@ -11,3 +11,5 @@
 /apps/endereco/migrations/*
 /apps/produto/__pycache__/*
 /apps/produto/migrations/*
+/apps/leilao/__pycache__/*
+/apps/leilao/migrations/*
