@@ -29,3 +29,4 @@ urlpatterns = [
     path('envios/', include('envio.urls', namespace='envios')),
     path('lances/', include('lance.urls', namespace='lances')),
 ]
+
