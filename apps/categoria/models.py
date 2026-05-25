@@ -13,3 +13,5 @@ class Categoria(models.Model):
         return f'{self.id} - {self.nome}'
     
     
+
+    
