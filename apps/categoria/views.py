@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Categoria
+from .serializer import CategoriaSerializer
 
-# Create your views here.
