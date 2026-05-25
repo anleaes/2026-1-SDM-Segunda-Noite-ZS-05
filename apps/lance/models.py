@@ -16,3 +16,4 @@ class Lance(models.Model):
 
     def __str__(self):
         return f'Lance R${self.valor} - {self.comprador.pessoa.nome}'
+    
