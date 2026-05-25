@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'produto.apps.ProdutoConfig',
     'leilao.apps.LeilaoConfig',
     'pagamento.apps.PagamentoConfig',
-     'envio.apps.EnvioConfig',
+    'envio.apps.EnvioConfig',
+    'lance.apps.LanceConfig',
 ]
 
 MIDDLEWARE = [
