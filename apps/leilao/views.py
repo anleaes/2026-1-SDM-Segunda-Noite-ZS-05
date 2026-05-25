@@ -6,3 +6,5 @@ from .serializer import LeilaoSerializer
 class LeilaoViewSet(viewsets.ModelViewSet):
     queryset = Leilao.objects.all()
     serializer_class = LeilaoSerializer
+
+    
