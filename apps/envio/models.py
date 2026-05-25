@@ -23,3 +23,4 @@ class Envio(models.Model):
     def __str__(self):
         rastreio = self.codigo_rastreio if self.codigo_rastreio else "Sem rastreio"
         return f'Envio: {rastreio} - Status: {self.status}'
+    
