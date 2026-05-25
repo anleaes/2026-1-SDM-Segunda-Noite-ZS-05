@@ -5,3 +5,5 @@ class LanceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lance
         fields = '__all__'
+
+        
